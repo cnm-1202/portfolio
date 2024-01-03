@@ -95,7 +95,7 @@ header {
 		display: none;
 	}
 }
-@media all and (min-width: 480px) and (max-width: 669px) {
+@media all and (min-width: 400px) and (max-width: 669px) {
 	header {
 		text-align: center;
 		padding-top: 30px;
