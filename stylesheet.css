@@ -830,7 +830,7 @@ td {
 	}
 
 	.contains {
-		width: 600px;
+		width: 499px;
 		height: 200px;
 	}
 
@@ -943,6 +943,10 @@ td {
 }
 .slide_select:nth-of-type(4):checked~.move_controler .button_move:nth-of-type(4) {
 	opacity: 1;
+}
+
+.form {
+	font-family: 'Noto Sans JP', sans-serif;
 }
 
 @media screen and (min-width: 1000px) {
