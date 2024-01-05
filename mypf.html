@@ -1,184 +1,278 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-	<meta charset="UTF-8">
-	<meta content="width=device-width, initial-scale=0.1" name="viewport">
-	<title>CM Design</title>
-	<link href="reset.css" rel="reset.css">
-	<link href="stylesheet.css" rel="stylesheet">
-	<meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-	<!---Googleフォント=-->
-	<link href="https://fonts.googleapis.com" rel="preconnect">
-	<link href="https://fonts.gstatic.com" rel="preconnect">
-	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
-	<!---Googleフォントここまで-->
+    <head>
+        <meta charset="UTF-8" />
+        <meta content="width=device-width, initial-scale=0.1" name="viewport" />
+        <title>CM Design</title>
+        <link href="reset.css" rel="reset.css" />
+        <link href="stylesheet.css" rel="stylesheet" />
+        <meta
+            content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+            name="viewport"
+        />
+        <!---Googleフォント=-->
+        <link href="https://fonts.googleapis.com" rel="preconnect" />
+        <link href="https://fonts.gstatic.com" rel="preconnect" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Noto+Sans+JP:wght@100&display=swap"
+            rel="stylesheet"
+        />
+        <!---Googleフォントここまで-->
+    </head>
+    <body>
+        <header>
+            <nav class="sp-nav">
+                <ul>
+                    <li>
+                        <a href="#top">Top</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#works">Works</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="btn-trigger" id="btn07">
+                <span></span> <span></span> <span></span>
+            </div>
+            <img class="header-logo" src="image/logo.png" />
+            <p class="sitename">CM Design</p>
+            <div class="header-nav">
+                <ul class="header-ul">
+                    <li class="header-li">
+                        <a class="menu-link" href="#top">Top</a>
+                    </li>
+                    <li class="header-li">
+                        <a class="menu-link" href="#about">About</a>
+                    </li>
+                    <li class="header-li">
+                        <a class="menu-link" href="#services">Services</a>
+                    </li>
+                    <li class="header-li">
+                        <a class="menu-link" href="#works">Works</a>
+                    </li>
+                    <li class="header-li">
+                        <a class="menu-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div id="top">
+            <img alt="トップイメージ" src="image/topimage-pc.jpg" />
+            <p class="message">
+                伝えたい、つなぎたい想いを<br />
+                デザインとしてかたちにするお手伝いをします。
+            </p>
+        </div>
+        <h2 class="ttlLarge">About</h2>
+        <div class="about" id="about">
+            <img alt="bigLogo" class="bigLogo fade" src="image/logo.png" />
+            <table class="profile">
+                <tr>
+                    <th>Name:</th>
+                    <td class="fade">Chinami Matsumoto</td>
+                </tr>
+                <tr>
+                    <th>Located:</th>
+                    <td class="fade">Osaka, Japan</td>
+                </tr>
+                <tr>
+                    <th>Content:</th>
+                    <td class="fade">cnmmatsumoto@gmail.com</td>
+                </tr>
+                <tr>
+                    <th>Skills:</th>
+                    <td class="fade">WIX, Wordpress, HTML & CSS</td>
+                </tr>
+            </table>
+        </div>
+        <h2 class="ttlLarge">Services</h2>
+        <div class="services" id="services">
+            <div class="services-icon">
+                <p class="services-ttl fade">Banner</p>
+                <p class="services-ttl-jp fade">バナー</p>
+                <img class="s-icon fade" src="image/banner.svg" />
+                <p class="txt-contents fade">
+                    さまざまなサイズ・ジャンルに対応しています。
+                </p>
+            </div>
+            <div class="services-icon">
+                <p class="services-ttl fade">Website Design</p>
+                <p class="services-ttl-jp fade">サイトデザイン</p>
+                <img class="s-icon fade" src="image/design.svg" />
+                <p class="txt-contents fade">
+                    ウェブサイトのデザインのご提案をします。
+                </p>
+            </div>
+            <div class="services-icon">
+                <p class="services-ttl fade">Coding</p>
+                <p class="services-ttl-jp fade">コーディング</p>
+                <img class="s-icon fade" src="image/coding.svg" />
+                <p class="txt-contents fade">
+                    ウェブサイトのコーディングの構築をします。
+                </p>
+            </div>
+        </div>
+        <h2 class="ttlLarge">Works</h2>
+        <div class="carousel" id="works">
+            <!-- ここからスライド -->
+            <div class="contains">
+                <input
+                    checked
+                    class="slide_select"
+                    id="SlideA"
+                    name="slide_check"
+                    type="radio"
+                />
+                <input
+                    class="slide_select"
+                    id="SlideB"
+                    name="slide_check"
+                    type="radio"
+                />
+                <input
+                    class="slide_select"
+                    id="SlideC"
+                    name="slide_check"
+                    type="radio"
+                />
+                <input
+                    class="slide_select"
+                    id="SlideD"
+                    name="slide_check"
+                    type="radio"
+                />
+                <div class="slide">
+                    <div class="scroll_controler">
+                        <label
+                            class="scroll_button scroll_prev"
+                            for="SlideD"
+                        ></label>
+                        <label
+                            class="scroll_button scroll_next"
+                            for="SlideB"
+                        ></label>
+                    </div>
+                    <img src="image/bannerexp1.png" />
+                </div>
+                <div class="slide">
+                    <div class="controler_scroll">
+                        <label
+                            class="scroll_button scroll_prev"
+                            for="SlideA"
+                        ></label>
+                        <label
+                            class="scroll_button scroll_next"
+                            for="SlideC"
+                        ></label>
+                    </div>
+                    <img src="image/bannerexp2.png" />
+                </div>
+                <div class="slide">
+                    <div class="controler_scroll">
+                        <label
+                            class="scroll_button scroll_prev"
+                            for="SlideB"
+                        ></label>
+                        <label
+                            class="scroll_button scroll_next"
+                            for="SlideD"
+                        ></label>
+                    </div>
+                    <img src="image/bannerexp3.png" />
+                </div>
+                <div class="slide">
+                    <div class="controler_scroll">
+                        <label
+                            class="scroll_button scroll_prev"
+                            for="SlideC"
+                        ></label>
+                        <label
+                            class="scroll_button scroll_next"
+                            for="SlideA"
+                        ></label>
+                    </div>
+                    <img src="image/bannerexp4.png" />
+                </div>
+                <div class="move_controler">
+                    <label class="button_move" for="SlideA"></label>
+                    <label class="button_move" for="SlideB"></label>
+                    <label class="button_move" for="SlideC"></label>
+                    <label class="button_move" for="SlideD"></label>
+                </div>
+            </div>
+            <!-- ここまでスライド -->
+        </div>
 
-</head>
-<body>
-	<header>
-		<nav class="sp-nav">
-			<ul>
-				<li>
-					<a href="#top">Top</a>
-				</li>
-				<li>
-					<a href="#about">About</a>
-				</li>
-				<li>
-					<a href="#services">Services</a>
-				</li>
-				<li>
-					<a href="#works">Works</a>
-				</li>
-				<li>
-					<a href="#contact">Contact</a>
-				</li>
-			</ul>
-		</nav>
-		<div class="btn-trigger" id="btn07">
-			<span></span> <span></span> <span></span>
-		</div><img class="header-logo" src="image/logo.png">
-		<p class="sitename">CM Design</p>
-		<div class="header-nav">
-			<ul class="header-ul">
-				<li class="header-li">
-					<a class="menu-link" href="#top">Top</a>
-				</li>
-				<li class="header-li">
-					<a class="menu-link" href="#about">About</a>
-				</li>
-				<li class="header-li">
-					<a class="menu-link" href="#services">Services</a>
-				</li>
-				<li class="header-li">
-					<a class="menu-link" href="#works">Works</a>
-				</li>
-				<li class="header-li">
-					<a class="menu-link" href="#contact">Contact</a>
-				</li>
-			</ul>
-		</div>
-	</header>
-	<div id="top">
-		<img alt="トップイメージ" src="image/topimage-pc.jpg">
-		<p class="message">伝えたい、つなぎたい想いを<br>
-		デザインとしてかたちにするお手伝いをします。</p>
-	</div>
-	<h2 class="ttlLarge">About</h2>
-	<div class="about" id="about">
-		<img alt="bigLogo" class="bigLogo fade" src="image/logo.png">
-		<table class="profile">
-			<tr>
-				<th>Name:</th>
-				<td class="fade">Chinami Matsumoto</td>
-			</tr>
-			<tr>
-				<th>Located:</th>
-				<td class="fade">Osaka, Japan</td>
-			</tr>
-			<tr>
-				<th>Content:</th>
-				<td class="fade">cnmmatsumoto@gmail.com</td>
-			</tr>
-			<tr>
-				<th>Skills:</th>
-				<td class="fade">WIX, Wordpress, HTML & CSS</td>
-			</tr>
-		</table>
-	</div>
-	<h2 class="ttlLarge">Services</h2>
-	<div class="services" id="services">
-		<div class="services-icon">
-			<p class="services-ttl fade">Banner</p>
-			<p class="services-ttl-jp fade">バナー</p><img class="s-icon fade" src="image/banner.svg">
-			<p class="txt-contents fade">さまざまなサイズ・ジャンルに対応しています。</p>
-		</div>
-		<div class="services-icon">
-			<p class="services-ttl fade">Website Design</p>
-			<p class="services-ttl-jp fade">サイトデザイン</p><img class="s-icon fade" src="image/design.svg">
-			<p class="txt-contents fade">ウェブサイトのデザインのご提案をします。</p>
-		</div>
-		<div class="services-icon">
-			<p class="services-ttl fade">Coding</p>
-			<p class="services-ttl-jp fade">コーディング</p><img class="s-icon fade" src="image/coding.svg">
-			<p class="txt-contents fade">ウェブサイトのコーディングの構築をします。</p>
-		</div>
-	</div>
-	<h2 class="ttlLarge">Works</h2>
-	<div class="carousel" id="works">
-		<div class="contains">
-			<input checked class="slide_select" id="SlideA" name="slide_check" type="radio">
-			<input class="slide_select" id="SlideB" name="slide_check" type="radio">
-			<input class="slide_select" id="SlideC" name="slide_check" type="radio">
-			<input class="slide_select" id="SlideD" name="slide_check" type="radio">
-			<div class="slide">
-			<div class="scroll_controler">
-				<label class="scroll_button scroll_prev" for="SlideD"></label>
-				 <label class="scroll_button scroll_next" for="SlideB"></label>
-			</div>
-			<img src="image/bannerexp1.png"></div>
-			<div class="slide">
-			<div class="controler_scroll">
-				<label class="scroll_button scroll_prev" for="SlideA"></label> <label class="scroll_button scroll_next" for="SlideC"></label>
-			</div><img src="image/bannerexp2.png"></div>
-			<div class="slide">
-			<div class="controler_scroll">
-				<label class="scroll_button scroll_prev" for="SlideB"></label> <label class="scroll_button scroll_next" for="SlideD"></label>
-			</div><img src="image/bannerexp3.png"></div>
-			<div class="slide">
-			<div class="controler_scroll">
-				<label class="scroll_button scroll_prev" for="SlideC"></label> <label class="scroll_button scroll_next" for="SlideA"></label>
-			</div><img src="image/bannerexp4.png"></div>
-			<div class="move_controler">
-				<label class="button_move" for="SlideA"></label>
-				<label class="button_move" for="SlideB"></label>
-				<label class="button_move" for="SlideC"></label>
-				<label class="button_move" for="SlideD"></label>
-			</div>
-		</div>
-	</div>
-
-
-	<h2 class="ttlLarge">Contact</h2>
-	<div class="form" id="contact">
-		<div class="form-item">
-			<p class="form-item-label"><span class="form-item-label-required">必須</span>お名前（会社名）</p><input class="form-item-input" type="text">
-		</div>
-		<div class="form-item">
-			<p class="form-item-label"><span class="form-item-label-required">必須</span>メールアドレス</p><input class="form-item-input" type="email">
-		</div>
-		<div class="form-item">
-			<p class="form-item-label"><span class="form-item-label-required">必須</span>電話番号</p><input class="form-item-input" type="tel">
-		</div>
-		<div class="form-item">
-			<p class="form-item-label"><span class="form-item-label-required">必須</span>お問い合わせ内容</p>
-			<textarea class="form-item-textarea"></textarea>
-		</div><input class="form-btn" type="submit" value="送信">
-	</div>
-	<footer>
-		<nav class="footer-nav">
-			<ul class="footer-ul">
-				<li class="footer-li">
-					<a class="menu-link" href="#top">Top</a>
-				</li>
-				<li class="footer-li">
-					<a class="menu-link" href="#about">About</a>
-				</li>
-				<li class="footer-li">
-					<a class="menu-link" href="#services">Services</a>
-				</li>
-				<li class="footer-li">
-					<a class="menu-link" href="#works">Works</a>
-				</li>
-				<li class="footer-li">
-					<a class="menu-link" href="#contact">Contact</a>
-				</li>
-			</ul>
-		</nav><a href="https://www.instagram.com/cmdesign0409/" target="_blank"><img class="instalogo" src="image/instagram.png"></a>
-		<p class="copyright">@CM Design All Rights Reserved.</p>
-	</footer>
-	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> 
-	<script src="stylesheet.js"></script>
-	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-</body>
+        <h2 class="ttlLarge">Contact</h2>
+        <div class="form" id="contact">
+            <div class="form-item">
+                <p class="form-item-label">
+                    <span class="form-item-label-required">必須</span
+                    >お名前（会社名）
+                </p>
+                <input class="form-item-input" type="text" />
+            </div>
+            <div class="form-item">
+                <p class="form-item-label">
+                    <span class="form-item-label-required">必須</span
+                    >メールアドレス
+                </p>
+                <input class="form-item-input" type="email" />
+            </div>
+            <div class="form-item">
+                <p class="form-item-label">
+                    <span class="form-item-label-required">必須</span>電話番号
+                </p>
+                <input class="form-item-input" type="tel" />
+            </div>
+            <div class="form-item">
+                <p class="form-item-label">
+                    <span class="form-item-label-required">必須</span
+                    >お問い合わせ内容
+                </p>
+                <textarea class="form-item-textarea"></textarea>
+            </div>
+            <input class="form-btn" type="submit" value="送信" />
+        </div>
+        <footer>
+            <nav class="footer-nav">
+                <ul class="footer-ul">
+                    <li class="footer-li">
+                        <a class="menu-link" href="#top">Top</a>
+                    </li>
+                    <li class="footer-li">
+                        <a class="menu-link" href="#about">About</a>
+                    </li>
+                    <li class="footer-li">
+                        <a class="menu-link" href="#services">Services</a>
+                    </li>
+                    <li class="footer-li">
+                        <a class="menu-link" href="#works">Works</a>
+                    </li>
+                    <li class="footer-li">
+                        <a class="menu-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="https://www.instagram.com/cmdesign0409/" target="_blank"
+                ><img class="instalogo" src="image/instagram.png"
+            /></a>
+            <p class="copyright">@CM Design All Rights Reserved.</p>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="stylesheet.js"></script>
+        <script
+            type="text/javascript"
+            src="//code.jquery.com/jquery-1.11.0.min.js"
+        ></script>
+    </body>
 </html>
