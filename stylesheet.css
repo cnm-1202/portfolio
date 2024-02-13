@@ -949,7 +949,7 @@ td {
         margin-top: 80px;
         margin-left: auto;
         margin-right: auto;
-        max-width: 700px;
+        max-width: 500px; /*スマホファーストで見栄え良くするために変更*/
         margin-bottom: 100px;
     }
     .form-item {
@@ -983,9 +983,12 @@ td {
     }
     .form-item-input {
         border: 1px solid #ddd;
-        border-radius: 2px;
-        padding-left: 1em;
+        border-radius: 5px;
+        /*padding-left: 1em;
         padding-right: 1em;
+        丸みを出すために変更*/
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
         height: 48px;
         flex: 1;
         width: 100%;
@@ -995,9 +998,11 @@ td {
     }
     .form-item-textarea {
         border: 1px solid #ddd;
-        border-radius: 2px;
-        padding-left: 1em;
+        /*padding-left: 1em;
         padding-right: 1em;
+        丸みを出すために変更*/
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
         height: 400px;
         flex: 1;
         width: 100%;
@@ -1060,9 +1065,11 @@ td {
     }
     .form-item-input {
         border: 1px solid #ddd;
-        border-radius: 2px;
-        padding-left: 1em;
+        /*padding-left: 1em;
         padding-right: 1em;
+        丸みを出すために変更*/
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
         height: 48px;
         flex: 1;
         width: 100%;
@@ -1135,9 +1142,11 @@ td {
     }
     .form-item-input {
         border: 1px solid #ddd;
-        border-radius: 2px;
-        padding-left: 1em;
+        /*padding-left: 1em;
         padding-right: 1em;
+        丸みを出すために変更*/
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
         height: 48px;
         flex: 1;
         width: 100%;
